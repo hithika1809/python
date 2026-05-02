@@ -1,0 +1,36 @@
+"""____________________MENU FORM___________________"""
+def sqr():
+  s = int(input("Enter side:"))
+  print("AREA: ",s*s)
+def rect(l,b):
+  print("AREA: ",l*b)
+def circle():
+  r = int(input("Enter radius: "))
+  return 3.14*r*r
+def triangle(h,b):
+  return 0.5*h*b
+while(True):
+  print("1.Square")
+  print("2.Rectangle")
+  print("3.Circle")
+  print("4.Triangle")
+  print("5.Exit")
+  a = int(input("Enter choice: "))
+  if a == 1:
+    sqr()
+  elif a == 2:
+    l = int(input("Enter length: "))
+    b = int(input("Enter breadth: "))
+    rect(l,b)
+  elif a == 3:
+    c = circle()
+    print("AREA: ",c)
+  elif a == 4:
+    h = int(input("Enter height: "))
+    b = int(input("Enter base: "))
+    t = triangle(h,b)
+    print("AREA: ",t)
+  elif a == 5:
+    print("THANK YOU! BYE")
+    break
+
