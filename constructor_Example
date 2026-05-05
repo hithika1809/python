@@ -1,0 +1,14 @@
+#____________________________CONSTRUCTOR WITHOUT ARGUMENTS(using lists)_____________________
+class circle:
+  def __init__ (self):
+    x = int(input("Enter radius: "))
+    self.r = x
+  def display(self):
+    print("Area: ",3.14*self.r**2)
+a = int(input("Enter no. of cirlces: "))
+l = []
+for i in range(a):
+  c = circle()  #constructor without arg
+  l.append(c)
+  c.display()
+  print("___________________")
