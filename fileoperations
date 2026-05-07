@@ -1,0 +1,16 @@
+#____________________WRITE OPERATION___________________
+data = [["Raju",19,"CSE"],
+        ["Akash",16,"AIML"],
+        ["Meena",34,"CSM"],
+        ["Ravi",50,"IT"]]
+res = tabulate(data,headers = title,tablefmt ="pretty")
+with open("hithika.txt",'w') as file:
+  file.write(res)
+print("done")
+#_______________________READ OPERATION__________________
+a = open("hithika.txt",'r')
+c = a.readlines()
+while c:
+  print(c)
+  c = a.readlines()
+a.close()
